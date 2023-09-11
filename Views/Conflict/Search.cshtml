@@ -1,0 +1,16 @@
+﻿@model SearchViewModel
+
+@{
+    ViewBag.Title = "Search Page";
+}
+
+<div>
+    <img src="@Model.CompanyLogoUrl" alt="Company Logo" />
+</div>
+
+<div>
+    <form action="@Url.Action("Search", "Conflict")" method="post">
+        <input type="text" name="Keywords" placeholder="Enter keywords..." value="@Model.Keywords" />
+        <input type="submit" value="Search" />
+    </form>
+</div>

@@ -1,0 +1,15 @@
+﻿@model List<SearchResult> // Replace with your actual search result model
+
+@{
+    ViewBag.Title = "Search Results";
+}
+
+<div>
+    <h2>Search Results</h2>
+    <ul>
+        @foreach (var result in Model)
+        {
+            <li>@result.Title</li> <!-- Display your search results as needed -->
+        }
+    </ul>
+</div>
